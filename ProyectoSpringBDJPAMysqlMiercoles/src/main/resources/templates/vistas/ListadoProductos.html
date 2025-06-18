@@ -14,7 +14,7 @@
 	<body>
 		<h1 style="text-align: center;">Listado de productos</h1>
 		<h2  style="text-align: center;">
-			<a th:href="@{RegistrarProducto}" th:text="'nuevo registro'" 
+			<a th:href="@{RegistrarProductos}" th:text="'nuevo registro'" 
 		title="crear un nuevo registro" class="btn btn-primary"></a>
 		</h2>
 		<table align="center" border="2">
@@ -32,7 +32,7 @@
 		<th:block th:each="p:${listado}">
 			<tr>
 				<td th:text="${p.idproducto}"></td>
-				<td th:text="${p.nomprod}"></td>
+				<td th:text="${p.nomproducto}"></td>
 				<td th:text="${p.precio}"></td>
 				<td th:text="${p.cantidad}"></td>
 				<td th:text="${p.total}"></td>
